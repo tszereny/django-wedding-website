@@ -36,7 +36,7 @@ DEBUG = True
 # Set to "console" for console output of emails or to "smtp" to send real mails
 MAIL_BACKEND = "console"
 
-ALLOWED_HOSTS = ["my_website_url", '127.0.0.1', '192.168.0.19', '16.171.134.55']
+ALLOWED_HOSTS = ["my_website_url", '127.0.0.1', '192.168.0.19', '16.171.134.55', '192.168.0.89', 'talev.hu']
 CSRF_TRUSTED_ORIGINS = [
     "http://example.com",
     'https://127.0.0.1'
