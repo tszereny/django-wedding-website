@@ -28,10 +28,13 @@
                         <a class="page-scroll" href="#main-header">Kezdőlap</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#saturday-event">Az esemény</a>
+                        <a class="page-scroll" href="#event">Érkezés pénteken</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#niagara">Helyszín</a>
+                        <a class="page-scroll" href="#saturday-event">Érkezés szombaton</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#niagara">Az esküvő</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#other-stuff">Minden más</a>
@@ -70,19 +73,23 @@
                         Kedves Szeretteink, összeházasodunk! &#129395;
                     </p>
                     <p>
-                        Ha messziről érkezel, és a meghívódon szerepel, hogy "2 napra érvényes",
-                        akkor a <a href="#event" class="page-scroll">péntek esti welcome party</a> részleteit itt
-                        találod.</p>
-                    <p>A <a href="#saturday-event" class="page-scroll">szombati menetrendről</a> pedig itt olvashatsz
+                        Ezen az oldalon szeretnénk megosztani veletek az örömünneppel kapcsolatos minden fontos
+                        információt.</p>
+                    <p> Ha messziről érkezel, és a meghívódon szerepel, hogy "2 napra érvényes",
+                        akkor a <a href="#event" class="page-scroll">péntek esti üdvözlő parti</a> részleteit itt
+                        találod. <br>Ha <a href="#saturday-event" class="page-scroll"> szombaton érkezel</a>, kattints a
+                        részletekért!</p>
+                    <p>Az <a href="#niagara" class="page-scroll">esküvőről</a> pedig itt olvashatsz
                         bővebben.
                     </p>
                     <p>
-                        Kérünk, jelezz vissza mielőbb az <a href="#contact" class="page-scroll">alábbi elérhetőségek</a> egyikén, hogy részt tudsz-e venni az eseményen.
+                        Kérünk, jelezz vissza mielőbb az <a href="#contact" class="page-scroll">alábbi elérhetőségek</a>
+                        egyikén, hogy részt tudsz-e venni az eseményen, illetve, hogy van-e bármilyen ételintoleranciád!
                                            </p>
                     <p>
                         Mi már nagyon várjuk, hogy együtt ünnepeljünk!
                     </p>
-                    <p class="pull-right">- Tibi és Ági életreszóló vállalkozása</p>
+                    <p class="pull-right">- Tibi és Ági életre szóló vállalkozása</p>
                 </div>
             </div>
         </div>
@@ -91,19 +98,19 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#saturday-event" class="portfolio-box page-scroll">
+                    <a href="#niagara" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/ravine-nav.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Esemény
+                                    Az esküvő
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#niagara" class="portfolio-box page-scroll">
+                    <a href="#saturday-event" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/prince-of-wales-hotel-nav.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -115,12 +122,12 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#story" class="portfolio-box page-scroll">
+                    <a href="#proposal" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/twelve-apostles-nav.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Történetünk
+                                    Lánykérés
                                 </div>
                             </div>
                         </div>
@@ -133,18 +140,12 @@
     <section id="niagara">
         {% include 'partials/niagara.html' %}
     </section>
-{% comment %}
-        {% include 'partials/wedding-party.html' %}
-{% endcomment %}
     <section id="other-stuff" class="bg-primary">
         {% include 'partials/misc.html' %}
     </section>
-    <section id="gifts">
-        {% include 'partials/gifts.html' %}
-    </section>
-    <section id="story" class="bg-dark">
-        {% include 'partials/story.html' %}
-    </section>
+{#    <section id="story" class="bg-dark">#}
+{#        {% include 'partials/story.html' %}#}
+{#    </section>#}
     {% include 'partials/proposal.html' %}
     {% include 'partials/save-the-dates.html' %}
     <section id="contact" class="bg-dark">
